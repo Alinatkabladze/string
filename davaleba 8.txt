@@ -1,0 +1,40 @@
+?using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication38
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string originalString = "a1b$%^2c3+";
+            string letters = string.Empty;
+            string numbers = string.Empty;
+            string symbols = string.Empty;
+
+       foreach (char c in originalString)
+   {
+    if (Char.IsLetter(c))
+    {
+        letters += c;
+    }
+    if (Char.IsNumber(c))
+    {
+        numbers += c;
+    }
+    if (Char.IsSymbol(c))
+    {
+        symbols += c;
+    }
+}
+       Console.WriteLine("letters :" + letters);
+       Console.WriteLine("numbers :" + numbers);
+       Console.WriteLine("symbols :" + symbols);
+      }
+     
+   }
+}
+        
